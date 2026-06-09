@@ -1,5 +1,5 @@
 const URL =
-"https://script.google.com/macros/s/AKfycbxqZCwui_7fF1GUXKN0JcgJM99heBV5dAyN0907JEdAkZaAxc0fifVBvzdPkqKkjTrS7Q/exec";
+"https://script.google.com/macros/s/AKfycbwfWIbX_ye0snlmrGVOl_pJAl6jIkdxN9QdREFjDLo-hPR1e1rYia2EKen1aaJl_mJvJA/exec";
 
 let state = JSON.parse(localStorage.getItem("state") || "{}");
 let history = JSON.parse(localStorage.getItem("history") || "{}");
