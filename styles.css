@@ -1,0 +1,106 @@
+:root{
+    --oro:#ffd700;
+    --plata:#c0c0c0;
+    --bronce:#cd7f32;
+    --fondo:rgba(0,0,0,0.78);
+    --verde:#00ff88;
+    --rojo:#ff4d4d;
+    --azul:#4da3ff;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    color:white;
+    background:
+        linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
+        url('https://images.unsplash.com/photo-1459865264687-c49fa049e84d');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px 20px;
+    background:linear-gradient(135deg,rgba(0,0,0,.95),rgba(0,20,60,.95));
+    border-bottom:4px solid var(--oro);
+}
+
+.menu{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    padding:8px 16px;
+    background:rgba(255,255,255,.1);
+    border-radius:8px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:rgba(255,255,255,.25);
+}
+
+.container{
+    width:min(1200px,95%);
+    margin:auto;
+}
+
+.board{
+    margin-top:20px;
+    background:var(--fondo);
+    padding:20px;
+    border-radius:18px;
+    backdrop-filter:blur(12px);
+}
+
+.title{
+    text-align:center;
+    font-size:2rem;
+    color:var(--oro);
+    margin-bottom:15px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    padding:16px;
+    margin-bottom:10px;
+    border-radius:12px;
+    background:rgba(255,255,255,.08);
+    transition:.3s;
+    font-size:1.2rem;
+}
+
+.row:hover{
+    transform:scale(1.01);
+}
+
+.first{background:linear-gradient(135deg,#ffd700,#fff6ba); color:black; font-weight:bold;}
+.second{background:linear-gradient(135deg,#c0c0c0,#eee); color:black; font-weight:bold;}
+.third{background:linear-gradient(135deg,#cd7f32,#f0c39a); color:black; font-weight:bold;}
+
+.up{
+    border-left:6px solid var(--verde);
+    animation:upMove .6s;
+}
+
+.down{
+    border-left:6px solid var(--rojo);
+    animation:downMove .6s;
+}
+
+@keyframes upMove{
+    0%{transform:translateY(10px); filter:brightness(1.5);}
+    100%{transform:translateY(0);}
+}
+
+@keyframes downMove{
+    0%{transform:translateY(-10px); filter:brightness(1.5);}
+    100%{transform:translateY(0);}
+}

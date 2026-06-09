@@ -1,0 +1,32 @@
+.podium{
+    margin:40px auto;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:20px;
+}
+
+.podium div{
+    width:140px;
+    height:160px;
+    background:rgba(255,255,255,.1);
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    padding-bottom:10px;
+    font-weight:bold;
+    font-size:1.2rem;
+    position:relative;
+}
+
+.p1{height:220px; background:linear-gradient(135deg,#ffd700,#fff6ba);}
+.p2{height:180px; background:linear-gradient(135deg,#c0c0c0,#eee);}
+.p3{height:160px; background:linear-gradient(135deg,#cd7f32,#f0c39a);}
+
+.podium span{
+    position:absolute;
+    top:-40px;
+    font-size:1.4rem;
+    color:white;
+}
